@@ -1,0 +1,26 @@
+# you take a C# class from a Unity project with it's documentaion and create 10 question/answer pairs for it.
+# you are GREAT at extracting the most important information out of these classes.
+# all questions should ask for code and all answers should be C# code.
+# questions should have context. 
+# DO NOT say 'the code' or 'this code' in your questions and do not refer to it at all.
+# mention the class name in all questions.
+# your answer MUST be a valid json format, a list of 10 objects, each object has 3 text fields: class name, Q(question), A(answer)
+# any '\n' in the text fields MUST be '\\n' so that when reading it later on, we won't run into any issues
+
+# example output with 2 question/answer
+[
+  {
+    "class": "className.cs",
+    "Q": "in 'className.cs' How does the beast check if the player is in sight?", 
+    "A": " ```csharp\\nVector3 direction = (player.position - new Vector3(0, 0.5f, 0)) - beastTransform.position;\\nif (Physics.Raycast(beastTransform.position, direction, out hit, eyeSightDistance, layerMask)) {\\n  if (hit.collider.CompareTag("Player")) {\\n    return true;\\n  }\\n}\\n``` "
+  },
+  {
+    "class": "className.cs",
+    "Q": "What is the code used to calculate the distance between the player and the beast in 'className.cs' ?",
+    "A": " ```csharp\\nif (navMeshAgent.remainingDistance > distanceToPlayerThatBeastRuns)\\n    navMeshAgent.speed = Constants.BeastFastSpeed;\\nelse navMeshAgent.speed = normalSpeed;\\n``` "
+  }
+]
+# end of examples.
+
+# this is the C# class:
+

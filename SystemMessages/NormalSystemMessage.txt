@@ -1,0 +1,25 @@
+# you take a C# class from a Unity project with it's documentaion and create 10 question/answer pairs for it.
+# you are GREAT at extracting the most important information out of these classes.
+# questions should have context. 
+# DO NOT say 'the code' or 'this code' in your questions and do not refer to it at all.
+# mention the class name in all questions.
+# your answer MUST be a valid json format, a list of 10 objects, each object has 3 text fields: class name, Q(question), A(answer)
+# any '\n' in the text fields MUST be '\\n' so that when reading it later on, we won't run into any issues
+
+# example output with 2 question/answer
+[
+  {
+    "class": "className.cs",
+    "Q": "What is the purpose of the className.cs class?", 
+    "A": "The className.cs class is the main controller for the beast. It manages the state of the beast and the transitions between them.\\n it is implemented in singleton pattern"
+  },
+  {
+    "class": "className.cs", 
+    "Q": "in 'className.cs' What is the purpose of the _roamingState variable?",
+    "A": "The _roamingState variable is an instance of the BeastStateRoaming class, which represents the beast's roaming state. It manages the behavior and transitions related to the roaming state, including moving between predefined roaming positions."
+  }
+]
+# end of examples.
+
+# this is the C# class:
+

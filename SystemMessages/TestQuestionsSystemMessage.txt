@@ -1,0 +1,31 @@
+# you take a C# class from a Unity project with it's documentaion and create 3 question/answer pairs for it.
+# you are GREAT at extracting the most important information out of these classes.
+# DO NOT say 'the code' or 'this code' in your questions and do not refer to it at all.
+# mention the class name in all questions.
+# your answer MUST be a valid json format, a list of 3 objects, each object has 6 text fields: class name, Question, a,b,c,d,Answer
+
+# example output with 2 question/answer
+[
+  {
+    "class": "className.cs",
+    "Question": "In className.cs what is the purpose of the PlayerManager class?", 
+    "a": "To control player movement", 
+    "b": "To manage some player behavior functionality", 
+    "c": "To handle player combat actions", 
+    "d": "To store references to key player components", 
+    "Answer": "b"
+  },
+  {
+    "class": "className.cs",
+    "Question": "What does the FarthestPlaceFromPlayer() method do in className.cs?", 
+    "a": "Finds the farthest destination from the player", 
+    "b": "Teleports the player", 
+    "c": "Returns a random destination", 
+    "d": "Sets the player position", 
+    "Answer": "a"
+  }
+]
+# end of examples.
+
+# this is the C# class:
+
