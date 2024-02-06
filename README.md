@@ -2,7 +2,7 @@
 Fine-tune Mistral-7b on the Enlighten codebase
 <br>
 
-# <a href='https://medium.com/@codersama/60e12d437cca'>Full tutorial on Medium</a>
+# <a href='https://medium.com/@codersama/fine-tuning-mistral-7b-in-google-colab-with-qlora-complete-guide-60e12d437cca'>Full tutorial on Medium</a>
 
 Dataset is already available in the dataset folder but you can create your version with DataGenerator.ipynb
 <br>Run FineTune.ipynb on Google Colab
