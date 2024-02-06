@@ -10,3 +10,6 @@ Dataset is already available in the dataset folder but you can create your versi
 
 
  
+<a href='https://huggingface.co/codersan/Enlighten_Instruct'>Adapter</a> - 
+<a href='https://huggingface.co/codersan/Enlighten_Instruct_merged'>merged model</a> - 
+<a href='https://huggingface.co/codersan/Enlighten_Instruct_merged-GGUF'>Quantized model</a>
